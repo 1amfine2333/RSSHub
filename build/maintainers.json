@@ -1738,6 +1738,9 @@
   "/douban/event/hot/:locationId": [
     "xyqfer"
   ],
+  "/douban/movie/coming": [
+    "reonokiy"
+  ],
   "/douban/bookstore": [
     "xyqfer"
   ],
@@ -3919,6 +3922,9 @@
     "ImSingee"
   ],
   "/medsci/:sid?/:tid?": [
+    "nczitzk"
+  ],
+  "/meishichina/recipe/:category{.+}?": [
     "nczitzk"
   ],
   "/meituan/tech": [
