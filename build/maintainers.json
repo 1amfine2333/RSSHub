@@ -249,7 +249,8 @@
   ],
   "/aamacau/:category?/:id?": [],
   "/abc/:category{.+}?": [
-    "nczitzk"
+    "nczitzk",
+    "pseudoyu"
   ],
   "/abmedia/:category?": [],
   "/abmedia/index": [],
@@ -626,6 +627,9 @@
     "youyou-sudo",
     "honue"
   ],
+  "/baoyu/blog": [
+    "liyaozhong"
+  ],
   "/baozimh/comic/:name": [
     "Fatpandac"
   ],
@@ -1000,7 +1004,7 @@
   "/bytes/": [
     "meixger"
   ],
-  "/c114/roll": [
+  "/c114/roll/:original?": [
     "nczitzk"
   ],
   "/caai/:caty": [
@@ -2225,6 +2229,9 @@
   "/flyert/creditcard/:bank": [
     "nicolaszf"
   ],
+  "/flyert/forum/:params{.+}?": [
+    "nczitzk"
+  ],
   "/flyert/preferential": [
     "howel52"
   ],
@@ -2233,7 +2240,8 @@
   ],
   "/follow/profile/:uid": [
     "KarasuShin",
-    "DIYgod"
+    "DIYgod",
+    "DFobain"
   ],
   "/followin/:categoryId?/:lang?": [
     "TonyRL"
@@ -2563,7 +2571,8 @@
     "Fatpandac"
   ],
   "/google/news/:category/:locale": [
-    "zoenglinghou"
+    "zoenglinghou",
+    "pseudoyu"
   ],
   "/google/research": [
     "Levix"
@@ -3007,6 +3016,9 @@
   "/hafu/news/:type?": [],
   "/hakkatv/news/:type?": [
     "TonyRL"
+  ],
+  "/hamel/blog": [
+    "liyaozhong"
   ],
   "/hameln/chapter/:id": [
     "huangliangshusheng"
@@ -3691,6 +3703,9 @@
   "/jlu/ccst/xwzx/:category": [
     "mayouxi"
   ],
+  "/jlu/phy/:category/:column/:subcolumn?": [
+    "tsurumi-yizhou"
+  ],
   "/joins/chinese/:category?": [
     "nczitzk"
   ],
@@ -3860,6 +3875,9 @@
   ],
   "/lang/live/room/:id": [
     "MittWillson"
+  ],
+  "/langchain/blog": [
+    "liyaozhong"
   ],
   "/lanqiao/author/:uid": [
     "huhuhang"
@@ -4892,6 +4910,9 @@
   ],
   "/openai/research": [
     "yuguorui"
+  ],
+  "/openrice/:lang/hongkong/explore/chart/:category": [
+    "after9"
   ],
   "/openrice/:lang/hongkong/offers": [
     "after9"
@@ -6398,6 +6419,9 @@
   ],
   "/thecover/channel/:id?": [
     "yuxinliu-alex"
+  ],
+  "/thegradient/posts": [
+    "liyaozhong"
   ],
   "/thehindu/topic/:topic": [
     "TonyRL"
