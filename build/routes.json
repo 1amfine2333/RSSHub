@@ -8871,7 +8871,7 @@
         "example": "/bilibili/user/dynamic/2267573",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 任意值         |        |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
+          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 0/1/true/false |  true  |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
         },
         "features": {
           "requireConfig": [
@@ -9004,7 +9004,7 @@
         "example": "/bilibili/followings/dynamic/109937383",
         "parameters": {
           "uid": "用户 id, 可在 UP 主主页中找到",
-          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 任意值         |        |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/followings/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
+          "routeParams": "\n| 键         | 含义                              | 接受的值       | 默认值 |\n| ---------- | --------------------------------- | -------------- | ------ |\n| showEmoji  | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| embed      | 默认开启内嵌视频                  | 0/1/true/false |  true  |\n| useAvid    | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink | 使用内容直链                      | 0/1/true/false | false  |\n| hideGoods  | 隐藏带货动态                      | 0/1/true/false | false  |\n\n用例：`/bilibili/followings/dynamic/2267573/showEmoji=1&embed=0&useAvid=1`"
         },
         "features": {
           "requireConfig": [
@@ -12489,6 +12489,46 @@
     "name": "caa.reviews",
     "url": "caareviews.org",
     "lang": "en"
+  },
+  "cags": {
+    "routes": {
+      "/edu/:category": {
+        "path": "/edu/:category",
+        "categories": [
+          "university"
+        ],
+        "example": "/cags/edu/tzgg",
+        "parameters": {
+          "category": "通知频道，可选 tzgg/ywjx/zs_bss/zs_sss/zs_dxsxly"
+        },
+        "features": {
+          "antiCrawler": false,
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "研究生院",
+        "maintainers": [
+          "Chikit-L"
+        ],
+        "radar": [
+          {
+            "source": [
+              "edu.cags.ac.cn/"
+            ]
+          }
+        ],
+        "description": "\n| 通知公告 | 要闻简讯 | 博士生招生 | 硕士生招生 | 大学生夏令营 |\n| -------- | -------- | ---------- | ---------- | ------------ |\n| tzgg     | ywjx     | zs_bss     | zs_sss     | zs_dxsxly    |\n",
+        "location": "edu/index.ts"
+      }
+    },
+    "name": "Chinese Academy of Geological Sciences",
+    "url": "cags.cgs.gov.cn",
+    "zh": {
+      "name": "中国地质科学院"
+    }
   },
   "cahkms": {
     "routes": {
@@ -18128,8 +18168,8 @@
         "radar": [
           {
             "source": [
-              "coomer.party/onlyfans/user/:id",
-              "coomer.party/"
+              "coomer.su/onlyfans/user/:id",
+              "coomer.su/"
             ]
           }
         ],
@@ -18157,8 +18197,8 @@
         "radar": [
           {
             "source": [
-              "coomer.party/posts",
-              "coomer.party/"
+              "coomer.su/posts",
+              "coomer.su/"
             ]
           }
         ],
@@ -18166,12 +18206,12 @@
         "maintainers": [
           "nczitzk"
         ],
-        "url": "coomer.party/posts",
+        "url": "coomer.su/posts",
         "location": "posts.ts"
       }
     },
     "name": "Coomer",
-    "url": "coomer.party",
+    "url": "coomer.su",
     "lang": "en"
   },
   "copernicium": {
@@ -18897,7 +18937,9 @@
           }
         ],
         "name": "User Feed",
-        "maintainers": [],
+        "maintainers": [
+          "Jkker"
+        ],
         "location": "blog.ts"
       }
     },
@@ -19610,7 +19652,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/discussed"
             ]
           }
         ],
@@ -19618,7 +19660,7 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/discussed",
         "location": "discussed.ts"
       },
       "/": {
@@ -19627,7 +19669,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/popular"
             ]
           }
         ],
@@ -19635,8 +19677,28 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/popular",
         "location": "index.ts"
+      },
+      "/source/:sourceId": {
+        "path": "/source/:sourceId",
+        "example": "/daily/source/hn",
+        "parameters": {
+          "sourceId": "The source id"
+        },
+        "radar": [
+          {
+            "source": [
+              "app.daily.dev/sources/:sourceId"
+            ]
+          }
+        ],
+        "name": "Source Posts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "app.daily.dev",
+        "location": "source.ts"
       },
       "/upvoted": {
         "path": "/upvoted",
@@ -19644,7 +19706,7 @@
         "radar": [
           {
             "source": [
-              "daily.dev/popular"
+              "app.daily.dev/upvoted"
             ]
           }
         ],
@@ -19652,7 +19714,7 @@
         "maintainers": [
           "Rjnishant530"
         ],
-        "url": "daily.dev/popular",
+        "url": "app.daily.dev/upvoted",
         "location": "upvoted.ts"
       },
       "/user/:userId": {
@@ -19661,8 +19723,8 @@
         "radar": [
           {
             "source": [
-              "daily.dev/:userId/posts",
-              "daily.dev/:userId"
+              "app.daily.dev/:userId/posts",
+              "app.daily.dev/:userId"
             ]
           }
         ],
@@ -19670,12 +19732,12 @@
         "maintainers": [
           "TonyRL"
         ],
-        "url": "daily.dev",
+        "url": "app.daily.dev",
         "location": "user.ts"
       }
     },
     "name": "Daily.dev",
-    "url": "daily.dev",
+    "url": "app.daily.dev",
     "categories": [
       "social-media"
     ],
@@ -20448,17 +20510,28 @@
   },
   "deeplearning": {
     "routes": {
-      "/thebatch": {
-        "path": "/thebatch",
+      "/the-batch/:tag{.+}?": {
+        "path": "/the-batch/:tag{.+}?",
+        "name": "The Batch",
+        "url": "www.deeplearning.ai",
+        "maintainers": [
+          "nczitzk",
+          "juvenn",
+          "TonyRL"
+        ],
+        "example": "/deeplearning/the-batch",
+        "parameters": {
+          "tag": "Tag, Weekly Issues by default"
+        },
+        "description": "::: tip\n  If you subscribe to [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)，where the URL is `https://www.deeplearning.ai/the-batch/tag/data-points/`, extract the part `https://www.deeplearning.ai/the-batch/tag` to the end, which is `data-points`, and use it as the parameter to fill in. Therefore, the route will be [`/deeplearning/the-batch/data-points`](https://rsshub.app/deeplearning/the-batch/data-points).\n\n  :::\n\n  | Tag                                                                    | ID                                                                   |\n  | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |\n  | [Weekly Issues](https://www.deeplearning.ai/the-batch/)                | [*null*](https://rsshub.app/deeplearning/the-batch)                  |\n  | [Andrew's Letters](https://www.deeplearning.ai/the-batch/tag/letters/) | [letters](https://rsshub.app/deeplearning/the-batch/letters)         |\n  | [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)  | [data-points](https://rsshub.app/deeplearning/the-batch/data-points) |\n  | [ML Research](https://www.deeplearning.ai/the-batch/tag/research/)     | [research](https://rsshub.app/deeplearning/the-batch/research)       |\n  | [Business](https://www.deeplearning.ai/the-batch/tag/business/)        | [business](https://rsshub.app/deeplearning/the-batch/business)       |\n  | [Science](https://www.deeplearning.ai/the-batch/tag/science/)          | [science](https://rsshub.app/deeplearning/the-batch/science)         |\n  | [AI & Society](https://www.deeplearning.ai/the-batch/tag/ai-society/)  | [ai-society](https://rsshub.app/deeplearning/the-batch/ai-society)   |\n  | [Culture](https://www.deeplearning.ai/the-batch/tag/culture/)          | [culture](https://rsshub.app/deeplearning/the-batch/culture)         |\n  | [Hardware](https://www.deeplearning.ai/the-batch/tag/hardware/)        | [hardware](https://rsshub.app/deeplearning/the-batch/hardware)       |\n  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)    | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)   |\n\n  #### [Letters from Andrew Ng](https://www.deeplearning.ai/the-batch/tag/letters/)\n\n  | Tag                                                                                     | ID                                                                                     |\n  | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |\n  | [All](https://www.deeplearning.ai/the-batch/tag/letters/)                               | [letters](https://rsshub.app/deeplearning/the-batch/letters)                           |\n  | [Personal Insights](https://www.deeplearning.ai/the-batch/tag/personal-insights/)       | [personal-insights](https://rsshub.app/deeplearning/the-batch/personal-insights)       |\n  | [Technical Insights](https://www.deeplearning.ai/the-batch/tag/technical-insights/)     | [technical-insights](https://rsshub.app/deeplearning/the-batch/technical-insights)     |\n  | [Business Insights](https://www.deeplearning.ai/the-batch/tag/business-insights/)       | [business-insights](https://rsshub.app/deeplearning/the-batch/business-insights)       |\n  | [Tech & Society](https://www.deeplearning.ai/the-batch/tag/tech-society/)               | [tech-society](https://rsshub.app/deeplearning/the-batch/tech-society)                 |\n  | [DeepLearning.AI News](https://www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/) | [deeplearning-ai-news](https://rsshub.app/deeplearning/the-batch/deeplearning-ai-news) |\n  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)                     | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)                     |\n  | [Just For Fun](https://www.deeplearning.ai/the-batch/tag/just-for-fun/)                 | [just-for-fun](https://rsshub.app/deeplearning/the-batch/just-for-fun)                 |\n  | [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |\n    ",
         "categories": [
           "programming"
         ],
-        "example": "/deeplearning/thebatch",
-        "parameters": {},
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
           "antiCrawler": false,
+          "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -20466,22 +20539,153 @@
         "radar": [
           {
             "source": [
-              "www.deeplearning.ai/thebatch",
-              "www.deeplearning.ai/"
+              "www.deeplearning.ai/the-batch",
+              "www.deeplearning.ai/the-batch/tag/:tag/"
             ]
+          },
+          {
+            "title": "Weekly Issues",
+            "source": [
+              "www.deeplearning.ai/the-batch/"
+            ],
+            "target": "/the-batch"
+          },
+          {
+            "title": "Andrew's Letters",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/letters/"
+            ],
+            "target": "/the-batch/letters"
+          },
+          {
+            "title": "Data Points",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/data-points/"
+            ],
+            "target": "/the-batch/data-points"
+          },
+          {
+            "title": "ML Research",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/research/"
+            ],
+            "target": "/the-batch/research"
+          },
+          {
+            "title": "Business",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/business/"
+            ],
+            "target": "/the-batch/business"
+          },
+          {
+            "title": "Science",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/science/"
+            ],
+            "target": "/the-batch/science"
+          },
+          {
+            "title": "AI & Society",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/ai-society/"
+            ],
+            "target": "/the-batch/ai-society"
+          },
+          {
+            "title": "Culture",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/culture/"
+            ],
+            "target": "/the-batch/culture"
+          },
+          {
+            "title": "Hardware",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/hardware/"
+            ],
+            "target": "/the-batch/hardware"
+          },
+          {
+            "title": "AI Careers",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/ai-careers/"
+            ],
+            "target": "/the-batch/ai-careers"
+          },
+          {
+            "title": "Letters from Andrew Ng - All",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/letters/"
+            ],
+            "target": "/the-batch/letters"
+          },
+          {
+            "title": "Letters from Andrew Ng - Personal Insights",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/personal-insights/"
+            ],
+            "target": "/the-batch/personal-insights"
+          },
+          {
+            "title": "Letters from Andrew Ng - Technical Insights",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/technical-insights/"
+            ],
+            "target": "/the-batch/technical-insights"
+          },
+          {
+            "title": "Letters from Andrew Ng - Business Insights",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/business-insights/"
+            ],
+            "target": "/the-batch/business-insights"
+          },
+          {
+            "title": "Letters from Andrew Ng - Tech & Society",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/tech-society/"
+            ],
+            "target": "/the-batch/tech-society"
+          },
+          {
+            "title": "Letters from Andrew Ng - DeepLearning.AI News",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/"
+            ],
+            "target": "/the-batch/deeplearning-ai-news"
+          },
+          {
+            "title": "Letters from Andrew Ng - AI Careers",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/ai-careers/"
+            ],
+            "target": "/the-batch/ai-careers"
+          },
+          {
+            "title": "Letters from Andrew Ng - Just For Fun",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/just-for-fun/"
+            ],
+            "target": "/the-batch/just-for-fun"
+          },
+          {
+            "title": "Letters from Andrew Ng - Learning & Education",
+            "source": [
+              "www.deeplearning.ai/the-batch/tag/learning-education/"
+            ],
+            "target": "/the-batch/learning-education"
           }
         ],
-        "name": "TheBatch 周报",
-        "maintainers": [
-          "nczitzk",
-          "juvenn"
-        ],
-        "url": "www.deeplearning.ai/thebatch",
-        "location": "thebatch.ts"
+        "location": "the-batch.ts"
       }
     },
-    "name": "deeplearning.ai",
+    "name": "DeepLearning.AI",
     "url": "www.deeplearning.ai",
+    "categories": [
+      "programming"
+    ],
+    "description": "",
     "lang": "en"
   },
   "deepmind": {
@@ -21058,6 +21262,35 @@
           "TonyRL"
         ],
         "location": "channel.ts"
+      },
+      "/search/:guildId/:routeParams": {
+        "path": "/search/:guildId/:routeParams",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/discord/search/302094807046684672/content=friendly&has=image,video",
+        "parameters": {
+          "guildId": "Guild ID",
+          "routeParams": "Search parameters, support content, author_id, mentions, has, min_id, max_id, channel_id, pinned"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "DISCORD_AUTHORIZATION",
+              "description": "Discord authorization header"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Guild Search",
+        "maintainers": [
+          "NekoAria"
+        ],
+        "location": "search.ts"
       }
     },
     "name": "Discord",
@@ -30118,6 +30351,63 @@
         ],
         "description": "The parameter id in the route is the id in the URL of the user's Google Scholar reference page, for example `https://scholar.google.com/citations?user=mlmE4JMAAAAJ` to `mlmE4JMAAAAJ`.\n\n  Query parameters are also supported here, for example `https://scholar.google.com/citations?user=mlmE4JMAAAAJ&sortby=pubdate` to `mlmE4JMAAAAJ&sortby=pubdate`. Please make sure that the user id (`mlmE4JMAAAAJ` in this case) should be the first parameter in the query string.",
         "location": "citations.ts"
+      },
+      "/developers/:locale?": {
+        "path": "/developers/:locale?",
+        "name": "Developers Blog",
+        "url": "developers.googleblog.com",
+        "maintainers": [
+          "Loongphy"
+        ],
+        "example": "/google/developers/en",
+        "parameters": {
+          "locale": {
+            "description": "language",
+            "default": "en",
+            "options": [
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "es",
+                "label": "Español (Latam)"
+              },
+              {
+                "value": "id",
+                "label": "Bahasa Indonesia"
+              },
+              {
+                "value": "ja",
+                "label": "日本語"
+              },
+              {
+                "value": "ko",
+                "label": "한국어"
+              },
+              {
+                "value": "pt-br",
+                "label": "Português (Brasil)"
+              },
+              {
+                "value": "zh-hans",
+                "label": "简体中文"
+              }
+            ]
+          }
+        },
+        "description": "Google Developers Blog",
+        "categories": [
+          "blog"
+        ],
+        "radar": [
+          {
+            "source": [
+              "developers.googleblog.com"
+            ]
+          }
+        ],
+        "location": "developers.ts"
       },
       "/doodles/:language?": {
         "path": "/doodles/:language?",
@@ -45860,6 +46150,40 @@
     "url": "laohu8.com",
     "lang": "zh-CN"
   },
+  "last-origin": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.last-origin.com",
+        "maintainers": [
+          "gudezhi"
+        ],
+        "example": "/last-origin/news",
+        "parameters": {},
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.last-origin.com/news.html",
+              "www.last-origin.com"
+            ],
+            "target": "/news"
+          }
+        ],
+        "description": "",
+        "location": "news.ts"
+      }
+    },
+    "name": "LastOrigin",
+    "url": "www.last-origin.com",
+    "lang": "ja"
+  },
   "latepost": {
     "routes": {
       "/:proma?": {
@@ -58373,6 +58697,45 @@
         "url": "nytimes.com/",
         "description": "By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.",
         "location": "index.ts"
+      },
+      "/rss/:cat?": {
+        "path": "/rss/:cat?",
+        "categories": [
+          "traditional-media",
+          "popular"
+        ],
+        "view": 0,
+        "example": "/nytimes/rss/HomePage",
+        "parameters": {
+          "cat": {
+            "description": "Category name, corresponding to the last segment of [official feed's](https://www.nytimes.com/rss) url."
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "nytimes.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "HenryQW",
+          "pseudoyu",
+          "dzx-dzx"
+        ],
+        "url": "nytimes.com/",
+        "description": "Enhance the official EN RSS feed",
+        "location": "rss.ts"
       }
     },
     "name": "The New York Times",
@@ -59105,6 +59468,23 @@
         "name": "香港餐厅滋讯",
         "description": "\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ",
         "location": "promos.ts"
+      },
+      "/:lang/hongkong/voting/top/:categoryKey": {
+        "path": "/:lang/hongkong/voting/top/:categoryKey",
+        "maintainers": [
+          "after9"
+        ],
+        "categories": [
+          "shopping"
+        ],
+        "example": "/openrice/zh/hongkong/voting/top/chinese",
+        "parameters": {
+          "lang": "语言，缺省为 zh",
+          "categoryKey": "类别，缺省为 chinese"
+        },
+        "name": "OpenRice 開飯熱店 - 年度餐廳投票",
+        "description": "\n  lang: 语言，见下方列表\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n\n  categoryKey: 部分类别，见下方列表 (更多的类别可以在页面的link中对照获取)\n  | 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |\n  | -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |\n  ",
+        "location": "voting.ts"
       }
     },
     "name": "Openrice開飯喇",
@@ -61237,17 +61617,38 @@
         "description": ":::warning\n  Only for self-hosted\n  :::",
         "location": "illustfollow.ts"
       },
-      "/user/novels/:id": {
-        "path": "/user/novels/:id",
+      "/user/novels/:id/:full_content?": {
+        "path": "/user/novels/:id/:full_content?",
         "categories": [
           "social-media"
         ],
+        "view": 0,
         "example": "/pixiv/user/novels/27104704",
         "parameters": {
-          "id": "User id, available in user's homepage URL"
+          "id": "User id, available in user's homepage URL",
+          "full_content": {
+            "description": "Enable or disable the display of full content. ",
+            "options": [
+              {
+                "value": "true",
+                "label": "true"
+              },
+              {
+                "value": "false",
+                "label": "false"
+              }
+            ],
+            "default": "false"
+          }
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "PIXIV_REFRESHTOKEN",
+              "optional": true,
+              "description": "\nPixiv 登錄後的 refresh_token，用於獲取 R18 小說\nrefresh_token after Pixiv login, required for accessing R18 novels\n[https://docs.rsshub.app/deploy/config#pixiv](https://docs.rsshub.app/deploy/config#pixiv)"
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -61256,15 +61657,26 @@
         },
         "radar": [
           {
+            "title": "User Novels (簡介 Basic info)",
             "source": [
               "www.pixiv.net/users/:id/novels"
-            ]
+            ],
+            "target": "/user/novels/:id"
+          },
+          {
+            "title": "User Novels (全文 Full text)",
+            "source": [
+              "www.pixiv.net/users/:id/novels"
+            ],
+            "target": "/user/novels/:id/true"
           }
         ],
         "name": "User Novels",
         "maintainers": [
-          "TonyRL"
+          "TonyRL",
+          "SnowAgar25"
         ],
+        "description": "\n| 小說類型 Novel Type | full_content | PIXIV_REFRESHTOKEN | 返回內容 Content |\n|-------------------|--------------|-------------------|-----------------|\n| Non R18           | false        | 不需要 Not Required  | 簡介 Basic info |\n| Non R18           | true         | 不需要 Not Required  | 全文 Full text  |\n| R18               | false        | 需要 Required       | 簡介 Basic info |\n| R18               | true         | 需要 Required       | 全文 Full text  |\n\nDefault value for `full_content` is `false` if not specified.\n\nExample:\n- `/pixiv/user/novels/79603797` → 簡介 Basic info\n- `/pixiv/user/novels/79603797/true` → 全文 Full text",
         "location": "novels.ts"
       },
       "/ranking/:mode/:date?": {
@@ -65848,7 +66260,7 @@
           "yinhanyan"
         ],
         "url": "ai.ruc.edu.cn/",
-        "description": ":::tip\n  分类字段处填写的是对应中国人民大学高瓴人工智能学院分类页网址中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段，并将其中的 `/` 修改为 `-`。\n\n  如 [中国人民大学高瓴人工智能学院 - 新闻公告 - 学院新闻](http://ai.ruc.edu.cn/newslist/newsdetail/index.htm) 的网址为 `http://ai.ruc.edu.cn/newslist/newsdetail/index.htm` 其中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段为 `newslist/newsdetail`。随后，并将其中的 `/` 修改为 `-`，可以得到 `newslist-newsdetail`。所以最终我们的路由为 [`/ruc/ai/newslist-newsdetail`](https://rsshub.app/ruc/ai/newslist-newsdetail)\n    :::",
+        "description": ":::tip\n  分类字段处填写的是对应中国人民大学高瓴人工智能学院分类页网址中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段，并将其中的 `/` 修改为 `-`。\n\n  如 [中国人民大学高瓴人工智能学院 - 新闻公告 - 学院新闻](http://ai.ruc.edu.cn/newslist/newsdetail/index.htm) 的网址为 `http://ai.ruc.edu.cn/newslist/newsdetail/index.htm` 其中介于 **`http://ai.ruc.edu.cn/`** 和 **/index.htm** 中间的一段为 `newslist/newsdetail`。随后，并将其中的 `/` 修改为 `-`，可以得到 `newslist-newsdetail`。所以最终我们的路由为 [`/ruc/ai/newslist-newsdetail`](https://rsshub.app/ruc/ai/newslist-newsdetail)\n  :::",
         "location": "ai.ts"
       },
       "/hr/:category?": {
@@ -71244,7 +71656,7 @@
     },
     "name": "Solidot",
     "url": "www.solidot.org",
-    "lang": "en"
+    "lang": "zh-CN"
   },
   "sony": {
     "routes": {
@@ -74200,7 +74612,7 @@
         "categories": [
           "programming"
         ],
-        "example": "/sycltech/news",
+        "example": "/sycl/news",
         "parameters": {
           "feed": "Feed source, defaults to news, references https://feeds.sycl.tech/"
         },
@@ -75567,6 +75979,36 @@
               "name": "TELEGRAM_SESSION",
               "optional": true,
               "description": "Telegram API Authentication"
+            },
+            {
+              "name": "TELEGRAM_API_ID",
+              "optional": true,
+              "description": "Telegram API ID"
+            },
+            {
+              "name": "TELEGRAM_API_HASH",
+              "optional": true,
+              "description": "Telegram API Hash"
+            },
+            {
+              "name": "TELEGRAM_MAX_CONCURRENT_DOWNLOADS",
+              "optional": true,
+              "description": "Telegram Max Concurrent Downloads"
+            },
+            {
+              "name": "TELEGRAM_PROXY_HOST",
+              "optional": true,
+              "description": "Telegram Proxy Host"
+            },
+            {
+              "name": "TELEGRAM_PROXY_PORT",
+              "optional": true,
+              "description": "Telegram Proxy Port"
+            },
+            {
+              "name": "TELEGRAM_PROXY_SECRET",
+              "optional": true,
+              "description": "Telegram Proxy Secret"
             }
           ],
           "requirePuppeteer": false,
@@ -75587,6 +76029,7 @@
         "maintainers": [
           "DIYgod",
           "Rongronggg9",
+          "synchrone",
           "pseudoyu"
         ],
         "description": "\n  :::tip\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`, it's recommended to deploy your own instance with telegram api configs (create your telegram application via `https://core.telegram.org/api/obtaining_api_id`, run this command `node ./lib/routes/telegram/scripts/get-telegram-session.mjs` to get `TELEGRAM_SESSION` and set it as Environment Variable).\n  :::",
@@ -77670,6 +78113,29 @@
         "url": "yz.tongji.edu.cn/zsxw/ggtz.htm",
         "location": "yjs.ts"
       },
+      "/sem": {
+        "path": "/sem",
+        "categories": [
+          "university"
+        ],
+        "example": "/tongji/sem",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "经济与管理学院通知",
+        "maintainers": [
+          "sitdownkevin"
+        ],
+        "url": "sem.tongji.edu.cn/semch/category/frontpage/notice",
+        "description": "",
+        "location": "sem/notice.ts"
+      },
       "/sse/:type?": {
         "path": "/sse/:type?",
         "categories": [
@@ -77860,6 +78326,38 @@
     },
     "name": "TOPYS",
     "url": "topys.cn",
+    "lang": "zh-CN"
+  },
+  "toutiao": {
+    "routes": {
+      "/user/token/:token": {
+        "path": "/user/token/:token",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/toutiao/user/token/MS4wLjABAAAAEmbqJP2CmC8XXv1BpMvQ3sQHKAxFsq8wHxj8XVIQWja6tMcB-QEbFkzkRNgMl12M",
+        "parameters": {
+          "token": "用户 token，可在用户主页 URL 找到"
+        },
+        "features": {
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.toutiao.com/c/user/token/:token"
+            ]
+          }
+        ],
+        "name": "头条主页",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "user.ts"
+      }
+    },
+    "name": "今日头条",
+    "url": "www.toutiao.com",
     "lang": "zh-CN"
   },
   "towardsdatascience": {
@@ -85498,11 +85996,24 @@
       "/rank/:type": {
         "path": "/rank/:type",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "example": "/xsijishe/rank/weekly",
         "parameters": {
-          "type": "排行榜类型: weekly | monthly"
+          "type": {
+            "description": "排行榜类型",
+            "options": [
+              {
+                "value": "weekly",
+                "label": "周榜"
+              },
+              {
+                "value": "monthly",
+                "label": "月榜"
+              }
+            ]
+          }
         },
         "features": {
           "requireConfig": [
@@ -85523,7 +86034,8 @@
         },
         "name": "排行榜",
         "maintainers": [
-          "akynazh"
+          "akynazh",
+          "AiraNadih"
         ],
         "location": "rank.ts"
       }
